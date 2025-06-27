@@ -24,13 +24,25 @@ def aplicar_filtros(df):
     return df_filtrado
 df_filtrado = aplicar_filtros(df)
 
-with st.expander("Sobre o Dashboard"):
-    st.write("""
-    Este dashboard apresenta dados do Airbnb em Nova York (2019).
-    
-    - Utilize os filtros na lateral para refinar os dados por bairro, tipo de acomodação e faixa de preço.
-    - Navegue entre as páginas no menu lateral.
-    - Explore gráficos interativos e análises detalhadas para descobrir padrões e tendências no mercado de hospedagem da cidade.
+with st.expander("Sobre o Dashboard - Airbnb NYC"):
+    st.markdown("""
+    ### Objetivo do Dashboard  
+    Este dashboard foi desenvolvido para explorar visualmente os dados de hospedagens do Airbnb em Nova York (ano de 2019).  
+    Através de gráficos interativos, mapas e análises estatísticas, o objetivo é facilitar a identificação de padrões, tendências e insights sobre o mercado de aluguel de curto prazo na cidade.
+
+    ### Como Navegar  
+    Utilize o menu lateral (à esquerda) para acessar as seguintes seções:  
+    - **Visão Geral**: Visualização básica dos dados e contagem de anúncios.  
+    - **Gráficos Interativos**: Mapa e análises dinâmicas utilizando Plotly.  
+    - **Análises Avançadas**: Gráficos detalhados como histogramas e comparativos por bairro.
+
+    ### Como os Filtros Influenciam os Dados  
+    Os filtros na barra lateral permitem refinar as análises em tempo real:  
+    - **Bairro**: Filtra anúncios por região da cidade.  
+    - **Tipo de Acomodação**: Exibe apenas o(s) tipo(s) de hospedagem selecionados.  
+    - **Faixa de Preço**: Limita a análise a uma faixa de preço específica.
+
+    Os gráficos e métricas se atualizam automaticamente conforme os filtros são modificados.
     """)
 
 def pagina_visao_geral(df_filtrado):
