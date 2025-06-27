@@ -26,7 +26,7 @@ df_filtrado = aplicar_filtros(df)
 
 with st.expander("Sobre o Dashboard - Airbnb NYC"):
     st.markdown("""
-    ### Trabalho realizado por Luís Eduardo e Kairob Ruan
+    ### Trabalho realizado por Luís Eduardo e Kairo Ruan
                 
     ### Objetivo do Dashboard  
     Este dashboard foi desenvolvido para explorar visualmente os dados de hospedagens do Airbnb em Nova York (ano de 2019).  
